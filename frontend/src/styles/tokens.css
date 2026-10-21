@@ -1,0 +1,65 @@
+/* Design tokens. Colour pairs used for text were checked for contrast (WCAG AA):
+   ink on paper 14:1, ink on marigold 9.7:1, muted on white 6.3:1, muted on paper 5.7:1,
+   white on rani 4.8:1, rani-text on white 5.6:1, green-text on white 5.2:1. */
+:root {
+  --ink: #171a3d;
+  --ink-soft: #2a2e5c;
+  --paper: #f3f3f9;
+  --surface: #ffffff;
+  --marigold: #ffb000;
+  --marigold-deep: #f0a000;
+  --marigold-soft: #fff1cc;
+  --rani: #e5195e;
+  --rani-text: #c4104e;
+  --rani-soft: #fde6ee;
+  --green: #0e9f6e;
+  --green-text: #067a53;
+  --green-soft: #dff5ec;
+  --muted: #5b5f7a;
+  --line: #e3e4ee;
+  --line-strong: #c9cade;
+  --placeholder: #e9e9f3;
+
+  --font-display: "Bricolage Grotesque Variable", "Figtree Variable", system-ui, sans-serif;
+  --font-body: "Figtree Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* type scale, ratio 1.25 from 16px */
+  --text-xs: 0.8rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+
+  /* spacing scale */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+
+  /* radius scale: small controls, images, big hero shapes, pills */
+  --r-sm: 8px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  --container: 1240px;
+  --header-h: 72px;
+
+  --focus-inner: var(--marigold);
+  --focus-outer: var(--ink);
+}
+
+/* Dark surfaces switch the focus ring colours so it stays visible. */
+.on-dark {
+  --focus-inner: var(--ink);
+  --focus-outer: #ffffff;
+}
